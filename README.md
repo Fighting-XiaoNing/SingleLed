@@ -29,18 +29,18 @@ FmlSingleLed是处于功能模块层的单个LED驱动库;
 ## 使用
 
 1. 添加`FmlSingleLed.h`和`FmlSingleLed.c`文件至工程
-2. 添加`HdlSingleLed.h`和`HdlSingleLed.c`文件，提供`hdlSingleLed.Xxx()`方法
+2. 添加`HdlSingleLed.h`和`HdlSingleLed.c`文件，提供`HDL_SingleLed_Xxx()`方法
 
     ```C
-    hdlSingleLed.Init();
-    hdlSingleLed.On();
-    hdlSingleLed.Off();
+    HDL_SingleLed_Init();
+    HDL_SingleLed_On();
+    HDL_SingleLed_Off();
     ```
 
 3. 初始化LED
 
     ```C
-    fmlSingleLed.Init();
+    FML_SingleLed_Init();
     ```
 
 4. 调用软PWM发生器
@@ -51,7 +51,7 @@ FmlSingleLed是处于功能模块层的单个LED驱动库;
         ...
         while (1)
         {
-            fmlSingleLed.SoftPWM();
+            FML_SingleLed_SoftPWM();
         }
     }
     ```
